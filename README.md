@@ -273,7 +273,7 @@ http://blog.xinshangshangxin.com/2015/04/22/%E4%BD%BF%E7%94%A8nodejs-%E8%B8%A9%E
 - 依赖管理（区分模块依赖的，还是开发阶段依赖的）
 - npmjs.org上如何发布模块
 
-## 配置文件实际
+## 配置文件实践
 
 上面的微信的菜单，db连接，还是wx_jsapi_sign都是基于配置的，使用配置文件会有一些问题
 
