@@ -5,7 +5,7 @@
 
 既然是noder，那肯定要用nodejs写，不然会被鄙视的。
 
-## node-webot
+## node-webot简介
 
 node-webot是老朴几个人建的org，主要开发微信sdk相关的node modules
 
@@ -16,7 +16,7 @@ node-webot是老朴几个人建的org，主要开发微信sdk相关的node modul
 - wechat-oauth 授权
 - wechat-api Wechat API/主动调用API
 
-## 一般的wechat sdk开发常用包
+## wechat sdk开发常用包
 
 - wechat-oauth
 - wechat-api（菜单，消息回复等）
@@ -34,7 +34,7 @@ var menu_config = config.get('wx.wx_menu');
 var app_id      = config.get('wx.app_id');
 var app_secret  = config.get('wx.app_secret');
 
-//小斑马在此
+//配置
 var api = new API(app_id, app_secret);
 
 //测试
@@ -171,7 +171,7 @@ router.get('/callback', function(req, res) {
             } else {
               console.log('User save sucess ....' + err);
               req.session.current_user = void 0;
-              res.redirect('/users/' + user._id + '/verify');
+              res.redirect('/user/' + user._id + '/verify');
             }
           });
           
@@ -297,8 +297,3 @@ http://blog.xinshangshangxin.com/2015/04/22/%E4%BD%BF%E7%94%A8nodejs-%E8%B8%A9%E
 - 第一件事儿是思考，而不是想找一个随便xx
 - 不要造重复的轮子，除非必要（先到github或相关网站上找对应模块，要有可以修改对应模块源码的能力）
 - 反身而诚，乐莫大焉
-
-
-
-
-
